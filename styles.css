@@ -1,0 +1,59 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, lightblue, lightcyan);
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    border-radius: 0cap;
+    background-color: azure;
+    overflow:scroll;
+    box-shadow: 0rem;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgb(13, 25, 134);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid rgb(74, 109, 146);
+}
+
+th {
+    background-color:rgb(13, 25, 134) ;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgb(132, 134, 193);
+    transition: 0.2s;
+}
+
+.present {
+    color: green;
+    font-weight: bold;
+}
+
+.absent {
+    color: red;
+    font-weight: bold;
+}
+
+/* Pseudo-elements */
+.present::before {
+    content: "✔ ";
+}
+
+.absent::before {
+    content: "✘ ";
+}
